@@ -1,4 +1,4 @@
-package dev.voroby.springframework.telegram.controller;
+package com.krpo.krpo.controllers;
 
 import dev.voroby.springframework.telegram.client.updates.ClientAuthorizationState;
 import jakarta.validation.Valid;

@@ -6,13 +6,13 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-starter-telegram</module>
-        <module>simple-client</module>
+        <module>MyEndpoints</module>
     </modules>
 
-    <groupId>dev.voroby</groupId>
-    <artifactId>telegramClient</artifactId>
+    <groupId>com.krpo</groupId>
+    <artifactId>TdApiEndpoints</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>telegramClient</name>
+    <name>TdApiEndpoints</name>
 
     <properties>
         <java.version>17</java.version>

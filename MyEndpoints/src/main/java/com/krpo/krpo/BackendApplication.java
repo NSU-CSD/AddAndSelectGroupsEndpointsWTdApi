@@ -1,4 +1,4 @@
-package dev.voroby.springframework.telegram;
+package com.krpo.krpo;
 
 import dev.voroby.springframework.telegram.client.TdApi;
 import dev.voroby.springframework.telegram.client.TelegramClient;
@@ -15,10 +15,10 @@ import java.util.concurrent.TimeUnit;
 
 @EnableScheduling
 @SpringBootApplication @Slf4j
-public class TelegramClientApplication {
+public class BackendApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TelegramClientApplication.class, args);
+        SpringApplication.run(BackendApplication.class, args);
     }
 
     @Autowired
@@ -31,7 +31,6 @@ public class TelegramClientApplication {
     public ApplicationRunner applicationRunner() {
         return args -> {
             while (!authorizationState.haveAuthorization()) {
-                /*wait for authorization*/
                 TimeUnit.MILLISECONDS.sleep(200);
             }
             TdApi.LoadChats loadChatsQuery = new TdApi.LoadChats(new TdApi.ChatListMain(), 100);
